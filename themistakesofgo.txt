@@ -1,0 +1,10 @@
+Go copies issue we've had for years for a specific reason, because the issue are actually better than the solutions we've come up with to fix them.
+
+Generics, non-null pointers, immutable data structures and referential transparency have great impacts on the resulting language.
+
+
+Programming languages are for people, if a language is too difficult to understand for majority of developers then it's not a good language.
+
+
+The age of haskell and it's obvious unpopularity are indicators that it's unlikely to be a good way to go when developing a programming language. 
+

@@ -1,0 +1,49 @@
+Code reuse
+
+Code reuse is hard, object orientated programming doesn't actually help much with this.
+
+Reusable code is code that is easy to understand. 
+When I have something I'd like to write there is often a library available to do it. But after a while looking at the badly documented and difficult(for me) to understand API for what (I consider) is a fairly simple problem I'll often go off and attempt to write it myself.
+Often this library code will have some large dependancy that I'm not familiar with or wouldn't otherwise have installed.(I avoid ruby/java/mono like the plague).
+Reading and understanding other people's code is difficult and every additional dependancy increases the cognative load.
+
+
+"It’s harder to read code than to write it." - Joel Spolsky
+
+
+
+
+
+Lisp suffers from this.
+Lisp has very little ability to allow code reuse.
+
+Every watched a sequal to a movie that didn't really make sense.
+Or a movie version of a book that completely missed the whole point of the book?
+
+Abstract mental models are a hard thing to communicate to large numbers of people with any kind of expectation that they will all understand it in the same way.
+
+
+Code is made harder to understand by it's fair lack of physical restriction.
+It's pretty easy to get a mental model of a house. You're largely restricted by the physical world, gravity, material strength, heating/cooling requirements. The basic requirements of a human beings, doors need to be a certain size, bench top a certain height etc.
+
+Code at the user interface level tends to have similar requirements placed on it, but as you get further down the stack things get more abstract.
+
+
+
+Code reuse is hard. It's so hard that it tends to only work for code that doesn't do anything specific in the real world.
+You can reuse an xml parser to parse any kind of xml. 
+
+As Programmers our job is to translate the real world in to a simpler form that we can actually express in code.
+When we give things names we tend to describe them in a more broad sense then they really are. Eg. A user object in your application only expresses the attributes of a user that your application requires, 
+it doesn't really make a whole lot of sense outside of your application.
+It can't be used in someone else's application unless you can both agree on what a user is and they will always have trouble any time you make changes to the user class that doesn't match with how they invisioned what a user is.
+
+This is even the case with functions. A function such as getTelephoneNumber() makes all kinds of assumptions about what the user of this function thinks a 'telephone number' is. Fixing a bug in this function or making some kind of 
+change may not mesh with their expectations. This usually leads to subtle bugs that take days to track down. Ah, the joys of modern programming.
+
+concrete code is reusable. Abstract code isn't. Business logic is almost always abstract, operating systems are mostly concrete.
+
+
+
+
+

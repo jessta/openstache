@@ -1,0 +1,31 @@
+I'm often skeptical of my own abilities as a programmer. I have trouble understanding things that others seems to use with ease.
+I often prefer to rewrite things than use a lot of libraries. Most libraries I look at scare me. (especially anything java related).
+This puts me in an interesting position. Is it everyone else that is creating horrible libraries that are difficult to understand or is it just my impatiences and lack of ability that prevent my understanding.
+
+I don't write a lot of code, and the code that I do write doesn't tend to ever be any kind of useful finished solution to a problem.
+I've written window managers, databases, network chat clients, web servers and various web apps for parts of business processes. I wrote a parser, tokenizer and interpreter for a toy programming language, I started writting a bit torrent client, network file systems, camera motion detection and a program that splits video at cuts aways. I've written an irc client, an init daemon, various unix tools, a bootable operating system (mostly from a tutorial) with task switching, a ncurses tetris clone, a text editor and while creating a database I implemented most of underlying data structures of git.
+
+All of these things never got to a usable state. They were all just learning exercises, the code was abandoned once I understood the principles involved and they always avoided most large libraries.
+
+QT,GTK, the windows API, most web frameworks and all Java libraries scare me. Meta-programming tends to worry me, so I avoid Ruby and the more dark magic side of python. Pythonists tend not to revel in complex meta to the same extent that Rubyists do, so I get along with python better.
+
+I avoid Perl and C++ because they get rather cryptic. I avoid lisp because most programmers shouldn't write programming languages.
+Haskell bothers me because simple things become rather complex and it's steep learning curve (Monads are botheringly abstract) means that a critical mass of developers is unlikely. PHP's weak typing bothers me, javascript bothers me, most dynamic languages bother me. I've spent too much time tracking down bugs that turn out to be silly typos in dynamic languages.
+
+Gaps in my knowledge have always bothered me. I find it difficult to grasp things when I lack a foundation. Understanding everything down to a fairly solid abstraction is important for me to understand anything at all. When programming I work from an abstract von neuman machine and build everything on top of that abstraction. As an abstraction it doesn't leak in any ways that commonly become an issue for me.
+
+
+I started my first job as a programmer last year. I worked there for 7 months and quit a month ago.
+At the time I was fairly vague about why I wanted to quit. Partly because I wasn't sure and partly because I didn't want to be a dick about it.
+
+* I felt like I wasn't learning*
+The first few months were interesting, I learned as much as I could about the libraries and frameworks the code base was built upon. I read parts of the code at home to get an idea of how the whole system worked. 
+At first I worked on a few small features that didn't interact with most of the system
+
+
+* I felt like I wasn't doing anything important*
+I really enjoy coding. I like finding the cause of problems and solving them in elegant ways. So I assumed that I'd enjoy any kind of coding. But it seems that a good wage, relax environment, good people and free coffee isn't enough. I also need to be doing something that I feel is important beyond myself or the  
+
+A month of thinking
+
+

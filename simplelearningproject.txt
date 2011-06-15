@@ -1,0 +1,21 @@
+The obvious simple learning project
+
+I've learned a lot of programming languages. Most with different paradgims and different cultures with a different
+way of doing things.
+To learn these languages I'll generally start with some simple project, often it will be something I've done before, 
+so I'm familiar with it. It also gives me a great way to see the difference between this new language and
+ the previously lanauges I've written in.
+
+This works well for languages that follow a simliar paradgim that have very similar semantic details.
+When I got to langauges like haskell this method completely broke down.
+
+In 'imperative languages' I'd always start with a simple program, that took some input, processed it in some way and output something.
+Since most projects I do are pretty much that, this always gives a good feel for a language.
+
+The biggest barrier people come across when trying to learn haskell is the 'monad'. It's also the first thing you encounter when you try
+to do this kind of 'simple learning project' in haskell.
+The first few times I tried to learn haskell this completely scared me away. If doing such a 'simple' thing was so difficult then 
+how was I ever going to understand the rest of the language?
+
+Eventually I went back and tried again, I skipped over the IO stuff and looked at the rest of the language.
+

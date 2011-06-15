@@ -1,0 +1,8 @@
+Premature optimisation is the root of all evil
+
+So the rule is generally, write something that works, profile the code and improve the slow parts.
+A better rule is, profile the code and improve the parts that need to be fast.
+Profile the code and improve the parts that can be improved and need to be fast.
+
+I think the "can be improved" part is rather important.
+

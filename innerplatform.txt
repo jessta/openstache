@@ -1,0 +1,17 @@
+Inner Platform Effect
+=====================
+
+The inner platform effect is about regaining control.
+People are using the outer platform and for what ever reason you'd rather they used your platform.
+The main reason for creating an inner platform is for deployment purposes.
+The dominant platform you're trying to avoid is widely deployed, things depend on it, so it's unlikely your new platform will be able to displace it in the short term. The solution is to build your platform on top of the legacy platform, that way people can use your platform along side their current platform. 
+The goal of the inner platform is to build market share up to a point where it can replace the legacy platform.
+
+Simple examples of this:
+DOS/Windows was built on top of IBM compatible hardware, which was the dominant microcomputing platform at the time. The wide spread deployment of Windows resulted in IBM losing control of the hardware market. Hardware became fairly irelevant.
+
+The web browser was built on top of windows and has begun replacing a large amount of the functionality of windows, so the point that it has become enough of a wide spread platform itself that it's now possible to run the web browser as the primary platform(see Google's ChromeOS)
+
+It's rare that you can build an outer platform to compete with the dominant platform (vmware, citrix etc. are examples). The problem with outer platforms is that they don't have the lock in pull of an inner platform.
+
+Due to this difficulty inner platforms tend

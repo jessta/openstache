@@ -1,0 +1,11 @@
+Immutable types
+
+Why would you create a concurrent language that didn't have everything immutable by default?
+Well, the problem is that immutability isn't just something you tack on to a language. If everything is immutable by default then you need to make copies everytime you need to modify something.
+For a language with pointers this is a real problem. How do you get a pointer to the new version all the way over from the creation of the new version to the place where you need a reference to it?
+well, you don't.
+
+infact once you've made everything immutable by default, you have a functional language and you can't avoid it.
+Pointers become useless because you can't update them.
+
+Let's talk about immutable types. 

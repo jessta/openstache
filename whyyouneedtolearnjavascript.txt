@@ -1,0 +1,18 @@
+Why everyone needs to learn javascript
+
+Previously this has been the case. But now, you can't have a user operating system that doesn't support javascript.
+Previously this wasn't the case for any other language.
+
+Previously we 
+
+Computers used to communicate via protocols. We'd agree on some format to use to transfer data from some machine to another.
+You didn't have to know or support any programming language as long as you could write support for that protocol in your choosen or supported language.
+
+There has been a change in this and the change is growing.
+
+The protocol no longer exists, communication between computers on the web is done via asking a server for code that can talk to it. Your system has to be able to execute this code.
+If you want to communicate with a web server then your computer has to have support for javascript.
+
+The hash-bang problem is getting worse, data and code are becoming more mixed.
+
+I predict that eventually the 

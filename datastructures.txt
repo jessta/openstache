@@ -1,0 +1,3 @@
+Data structures are the heart of any program. The data structures define the abstraction of the world that your program will operate in.
+I don't understand why modern OO languages make making a new data structures such a hassle.
+

@@ -1,0 +1,5 @@
+Unix where everything is a file. Well...most things..well ok most things aren't actually files in unix, but that's the general idea.
+Plan9 has more things are files. Well...they're not really files which is the generally confusing part.
+Well, they are files, but probably not the files you're thinking of.
+
+

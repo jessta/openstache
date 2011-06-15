@@ -1,0 +1,12 @@
+Off to the races
+
+Race conditions are the idea that multiple threads of execution depending on in which order they execute may access data in an inconsistant way.
+Race conditions do not only occur in multithreaded environments, but can also occur within a thread.
+
+
+I recently worked on an application where the ORM introduced races within a single thread. Lazy loading of data structures ment that a data structure could be inconsistant with it self.
+Imagine having a house data structure that contains a stove. You fetch the house from the database, get the stove id number and fetch the stove. Perhaps the type of stove affects the likelihood of the house burning down and this likelihood value is stored in the house so you can avoid doing the calculation everytime you need it.
+
+Ok, so imagine you fetch the house and then the stove changes, 
+
+

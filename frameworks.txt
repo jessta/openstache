@@ -1,0 +1,4 @@
+Frameworks, the retarded neighour of programming languages. They are usually far more complex and far less thought out.
+They represent a programmer's dream, to have your code be so important that thousands/millions of projects depend on it.
+
+

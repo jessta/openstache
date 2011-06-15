@@ -1,0 +1,65 @@
+A common complaint
+Another complaint people have about Go is the existance of Null pointers.
+
+An uint32 can be any number between 0 and (2^32)-1.
+Perhaps I have a function that returns an uint32 that has an invariant that it won't be 0 or perhaps I have another type that isn't allowed to be 1 or perhaps my invariant is that this function only returns strings that start with "j" or have 5 'p's in it.
+
+There are infinity possible expectations of invariants and you can't model them all with a human comprehendable type system.
+So what makes null special? Why create a special type to prevent pointers from being null?
+The great thing about dereferencing null pointers is that the system actually tells you about the bug at runtime this isn't true of almost every other invariant. 
+
+People make a big deal about null pointers because they see the bugs that cause them on a more regular basis because they tell you about themselves far more often than other bugs. They aren't more common or more difficult to deal with, they are just more obvious.
+
+An 'optional'(or 'maybe') isn't useful in most of the places you'd encounter a pointer anyway.
+Any data structure that contains pointers(eg The tail end of a linked list) can't have them be declared as non-null. A pointer declared in an outer scope to it's pointee can't be non-null.
+
+If everything that can be null has to be checked before access then accessing any kind of nested data structure becomes a massive pain. 
+Object.Object.Object.Method(SomeOtherObject)
+becomes:
+
+
+if Object.Object != null {
+	a = Object.Object
+	if a.Object != null {
+		b = a.Object
+		if someOtherObject != null {
+			c = someOtherObject
+			b.Method(c)
+		}
+	}
+}
+
+Sure it's safe, but if you 'know' that none of these are actually null then it's seriously annoying.
+I'd hate to have to do that everytime I called a Method on that object.
+
+If you want to avoid this then you have to add special constructors to the language that can instansiate non-null pointer attributes of an Object to values while not having the non-null pointers ever be null. But then you have to deal with all the issues that come up when you have special functions for object construction (Things like not being able to partially instanciate data structures for testing).
+
+This gets really messy really fast and eventually you end up with Haskell.
+
+Every decision in language design is some kind of trade off and has a large impact on the rest of the language.
+The Go designers were perfectly aware of the issues surrounding null pointers and the current solutions to it but choose not to use it because of the complexity it adds to the language for very little return in terms of actual safety.
+The problem is that null-ability tends to get everywhere in your program anyway.
+
+
+
+Some people complained that Go should have had every object immutable by default with a mutable keyword to allow changes, but this also leads to language issues. You end up forcing pointless copies because 
+
+ 
+How do I drop a reference to an object that I want garbage collected?
+
+How do I declare a pointer in an outer scope to it's pointee?
+
+Then there is all the temporary 
+
+
+ 
+
+But the correct value for something defined as int32 is some subset of that. Perhaps it's value being 0 is a bug.
+So I proposed a type that is a compile time enforcement that the value wouldn't be 0 and I add language facilities to prevent me using it when it's a 0 and I am required to check if it's 0 before using it.
+
+
+
+An 'optional'(or 'maybe') doesn't actually prevent null pointer dereference but it does make the possibility of a null pointer more obvious. You  would need complicated interaction between scopes and types to actually do it, which requires language support
+
+
+

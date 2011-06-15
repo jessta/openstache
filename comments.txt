@@ -1,0 +1,13 @@
+Commenting
+
+Code isn't supposed to be cryptic. Programming languages are actually designed to make writing and reading logical statements far easier than they would be in nature language.
+Because of this reading comments usually requires that the reader make some assumptions.
+For the person wrote the code this is fine, they'll make the same assumptions they did while writing it. But for another reader this is far more error-prone as the reader may make different assumptions.
+If the function name, package it's in, the parameter and return types, and a brief comment to provide context don't provide the caller with an understanding of what the function does then it's far better to have caller read the actual code to find out more. 
+
+Inline comments are for WTF? moments. If you're writing code that you feel will confuse someone that isn't you then provide a comment.
+ 
+
+
+
+

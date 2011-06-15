@@ -1,0 +1,22 @@
+Go Panic/Recover
+
+Originally go didn't have any kind of exception behaviour.
+This was a problem because certain things are exceptional and can't be captured in a function return value.
+Things like divide-by-zero, overflowing array bounds, and runtime type errors are single expressions that couldn't return errors.
+
+But exceptions are irriating, they make APIs either unpredicatable(python,ruby,C#) or they add a lot of frustration in needlessly dealing with things that won't happen(java).
+
+So the addition of the panic/recover feature to the language was consided carefully. The result is a feature that is annoying enough to use that people avoid using it 
+unnescessarily and simple enough that it's still easy to understand.
+The panic/recover feature also come with a non-language enforced convention, "unless the error is completely fatal don't let a panic escape from your package".
+Gophers tends to react harishly to developers who ignore this convention.
+
+Why is this convention so important?
+It creates predicatabilitly in APIs.
+
+
+Consider interfaces:
+The io.Reader interface defines a func Read([]byte) (n int, err os.Error)
+Any kind of stream could be made to satisfy this interface, but each kind of stream would have it's own set of error conditions.
+  
+

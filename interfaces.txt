@@ -1,0 +1,10 @@
+Go Interfaces
+
+Interfaces in Go are very powerful, but their power comes from being very generic.
+Unlike interfaces in Java or C# where an interfaces defines a very specific thing that just lacks an implementation.
+Interfaces in Go only define a set of methods.
+
+I've noticed that it's a bit of a difficult transistion for developers coming from other statically typed languages.
+
+Interfaces are 
+

@@ -1,0 +1,8 @@
+Go and Async IO
+
+This one is a funny one, every few weeks we get a new user on the mailing list talking about how Go should use async IO instead of blocking.
+This comes from a lack of understanding of Go and a bit of cargo cult programming.
+
+IO doesn't block threads for a techinical reason. The blocking of threads is a useability thing.
+It makes the programmer's job easier.
+

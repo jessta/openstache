@@ -1,0 +1,21 @@
+The More Things Change...
+"everything moves in painful cycles of forgetting and reinvention in the computer industry"
+http://nbree.blogspot.com/2011/04/more-things-change.html
+
+My opinion on why this happens is all about problems and their solutions.
+Problems always come before solutions, if you don't have the problem then you won't think about or learn about a solution.
+"Of course, this is how it ever was; lessons learned in mainframes being forgotten and re-learned by the upstart minicomputer folks, and then in turn forgotten and re-learned in the age of the microprocessor, and now once again in the age of web development"
+
+In this case, 
+
+Web development became quite popluar. 
+Even now if you ask a web developer about making user interfaces they will tell you that making user interfaces for the web is far eaiser than the usual graphical tookits(QT,GTK, etc.).
+
+
+
+Why this happens
+
+
+We're all building mainframes again. Because centralised computing is cheap to run.
+Distributed computing is still taking a back seat.
+

@@ -1,0 +1,4 @@
+Difficult concepts in Go.
+- the trade off between flexibility and simplicity.
+Every new feature for a small set of users is a burden on all users
+

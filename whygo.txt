@@ -1,0 +1,9 @@
+"The competent programmer is fully aware of the limited size of his own skull. He therefore approaches his task with full humility, and avoids clever tricks like the plague."
+- Edsger W. Dijkstra
+
+I've always had an interest in computers. Starting off with some simple stuff and move to more and more things.
+But I've always struggled. My biggest struggle is my need to try new things, old things are easy.
+
+The software tools I use frustrate me. The massive complexity of the software I use everyday boggles the mind.
+Understanding software often requires that you understand the minds of the programmers that wrote it.
+

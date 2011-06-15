@@ -1,0 +1,107 @@
+<h1>Things that new Go programmers tend to have trouble with</h1>
+<p>
+There are a few things that tend to come up on the mailing list often enough. They usually steam 
+from people not reading the language spec and assuming that Go is the same as languages they've previously used.
+These things all have simple rules and once you think about how else you could do these, you'll realise 
+that out of the possible options these are a very good choice.<br />
+The top 4:
+<ul>
+<li>The bracing style</li>
+<li>Deleting items from maps</li>
+<li>Implict convertions to interface types</li>
+<li>Private fields in structs</li>
+</ul>
+</p>
+
+
+<h2>The bracing style</h2>
+<p>
+Go has a required bracing style. This is a side-effect of the removal 
+of the need for semicolons as statement seperators.
+
+Interesting and possibly unexpected things happen if you don't follow this required style.
+But it all follows a very simple rule.
+'A newline will act as a statement terminator if the preceding statement is complete.'
+(the actual rules are here, but the tend to confuse people
+http://golang.org/doc/go_spec.html#Semicolons)
+</p>
+<p>
+So if you've got a complete statement all on one line then you don't have to worry about the terminator.
+But if you're spliting a statement across multiple lines you have to make sure that each line isn't
+ itself a complete statement.
+</p>
+<code>
+//The following is a complete statement.
+func myfunction(a int)
+</code>
+<p>
+It's a function with an empty body. These are often used when you want 
+to name a function that will be calling assembly code in a different file.
+Most people aren't doing that, but it's still a valid statement.
+</p>
+If I was to do:
+<code>
+func myfunction(a int)
+{
+   fmt.Println("hello")
+}
+</code>
+The parser would read the first line as a complete statement defining an empty 
+function and then be confused by the '{' on the next line.
+
+Why do it this way?
+1. Having to put semicolons at the end of every statement is really annoying, especially when you miss one and have to
+ go back and add it.
+2. Once you remove the semicolon as a terminator you need some way to know that a statement has finished.
+3. If you have to look ahead to the next line to know if the statement is complete or not then you can't make a REPL.
+(Look at haskell's different syntax for it's REPL to see why looking-ahead to the next line is a terrible idea).
+
+
+
+<h2>Deleting items from maps</h2>
+<p>
+This one bugged me for a while, it's simple and easy to remember but it's a bit 
+weird in comparison to the rest of the language.
+http://golang.org/doc/go_spec.html#Map_types
+</p>
+But trying to think of a way to do this that fits in with the rest of the languages is harder than it seems at first.
+
+Why did they do it this way?
+1. having a del(),remove() etc. function that only dealt with maps would still be strange since 
+it would only work on maps, and it would also be adding another function to the global scope, which is best to avoid.
+2. code doesn't tend to remove things from maps all that often. So it's a rarely used function.
+
+
+
+<h2>Implict convertions to interface types</h2>
+
+When passing a value to a function that expects an interface type, the function will implicitly convert the value to an interface.
+Everywhere else in the language conversions are required to be explicit.
+I've noticed that this confuses people coming from c++ and Java because it confuses what an interface is in Go.
+
+Unlike c++ and java, an interface in go is a run-time value that wraps another value, but if you don't care about 
+the value contained in an interface and only the methods then you might not notice this and be confused when 
+you finally do care about the value and it's not what you thought it was.
+
+From the perspective of a java programmer it looks like you're just passing in a type that implements the 
+interface and that type is what is available to the function being called.
+
+
+Why did they do it this way?
+The alternative is to require some kind of explicit conversion. This would get annoying very quickly because 
+you'd almost always have to do the conversion between a type and an interface. It would make code that uses interfaces
+a pain to work with and hide the real meaning with a lot of type conversions.
+eg.
+<code>
+IsNil := func(x interface{}) bool { return x == nil }
+IsNil(interface{}(nil))
+</code>
+But this isn't even right, since interface{}(nil) is kind of ambiguous, am I creating an interface{} that is nil or am I wrapping a nil value in an interface{}?
+
+
+
+Which is more obvious, but makes using interfaces a real pain since you'd need to do a conversion every time you used an interface, making interfaces greatly annoying to use.
+
+It's a simple rule, and once you know it it's not confusing at all.
+Go has a few things that are a bit strange for people coming from other languages, but they are always simple rules that you'll never forget once you know them.
+

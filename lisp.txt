@@ -1,0 +1,23 @@
+Ah lisp.
+I never got in to lisp, it was one of those languages that I specically avoided using once I understand the general idea and decided it wasn't for me.
+http://www.winestockwebdesign.com/Essays/Lisp_Curse.html
+"In this essay, I argue that Lisp's expressive power is actually a cause of its lack of momentum."
+
+In fact the expressive power of lisp is exactly why I've specifically avoided lisp.
+Language design is hard, and easy to get wrong without realising. Many language features have great influent over the rest of the language, some features require other features
+are impossible to have along side some others. A language that includes them all has in itself exclusive subsets. If you can't mix the features of a language together in the
+same code base then it not a single languages at all.
+
+Learning a language is hard too. Even formating of language makes it easier or harder to read depending on 
+your previous experience.
+
+The lispers say that lisp has every feature that any other language could have or could implement any feature in a short time. This is likely true, but any language is a
+specific subset of all possible language features, paired down to a select few that are aggreed upon by the creators.
+
+The concept that lisp is so expressive that 
+
+
+Lisp is great when everything is lisp, but that's never the case and once you start including other languages in your system the advantages of lisp diminish.
+
+
+ 
