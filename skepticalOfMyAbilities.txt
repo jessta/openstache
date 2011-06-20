@@ -15,17 +15,3 @@ Haskell bothers me because simple things become rather complex and it's steep le
 Gaps in my knowledge have always bothered me. I find it difficult to grasp things when I lack a foundation. Understanding everything down to a fairly solid abstraction is important for me to understand anything at all. When programming I work from an abstract von neuman machine and build everything on top of that abstraction. As an abstraction it doesn't leak in any ways that commonly become an issue for me.
 
 
-I started my first job as a programmer last year. I worked there for 7 months and quit a month ago.
-At the time I was fairly vague about why I wanted to quit. Partly because I wasn't sure and partly because I didn't want to be a dick about it.
-
-* I felt like I wasn't learning*
-The first few months were interesting, I learned as much as I could about the libraries and frameworks the code base was built upon. I read parts of the code at home to get an idea of how the whole system worked. 
-At first I worked on a few small features that didn't interact with most of the system
-
-
-* I felt like I wasn't doing anything important*
-I really enjoy coding. I like finding the cause of problems and solving them in elegant ways. So I assumed that I'd enjoy any kind of coding. But it seems that a good wage, relax environment, good people and free coffee isn't enough. I also need to be doing something that I feel is important beyond myself or the  
-
-A month of thinking
-
-
